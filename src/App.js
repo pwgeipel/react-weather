@@ -4,11 +4,11 @@ import SearchBar from "./components/SearchBar";
 import TimeAndLocation from "./components/TimeAndLocation";
 import TempAndDetails from "./components/TempAndDetails";
 import Forecast from "./components/Forecast";
-import getWeatherData from "./services/WeatherService";
+import getFormattedWeatherData from "./services/WeatherService";
 
 function App() {
   const fetchWeather = async () => {
-    const data = await getWeatherData();
+    const data = await getFormattedWeatherData({ q: "milwaukee" });
     console.log(data);
   };
 

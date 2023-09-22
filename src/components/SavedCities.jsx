@@ -8,7 +8,7 @@ function SavedCities() {
     },
     {
       id: 2,
-      name: "Tokyo",
+      name: "Belo Horizonte",
     },
     {
       id: 3,
